@@ -5,10 +5,24 @@
   --font-mono: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 
-  --color-white: #fff;
+  /* --color-white: #fff; */
+  --color-white: hsla(0, 0%, 100%, 1);
   --color-black: #000014;
+  --color-base-gray: 215, 14%;
 
-  --color-gray-50: #f9fafb;
+  --color-gray-5: var(--color-base-gray), 5%;
+  --color-gray-10: var(--color-base-gray), 10%;
+  --color-gray-20: var(--color-base-gray), 20%;
+  --color-gray-30: var(--color-base-gray), 30%;
+  --color-gray-40: var(--color-base-gray), 40%;
+  --color-gray-50: var(--color-base-gray), 50%;
+  --color-gray-60: var(--color-base-gray), 60%;
+  --color-gray-70: var(--color-base-gray), 70%;
+  --color-gray-80: var(--color-base-gray), 80%;
+  --color-gray-90: var(--color-base-gray), 90%;
+  --color-gray-95: var(--color-base-gray), 95%;
+
+  /* --color-gray-50: #f9fafb;
   --color-gray-100: #f3f4f6;
   --color-gray-200: #e5e7eb;
   --color-gray-300: #d1d5db;
@@ -18,7 +32,7 @@
   --color-gray-700: #374151;
   --color-gray-800: #1f2937;
   --color-gray-900: #111827;
-  --color-gray-950: #090e18;
+  --color-gray-950: #090e18; */
 
   --color-blue: #3894ff;
   --color-blue-dark: #1c5fac;
@@ -63,17 +77,18 @@ body {
 :root.theme-dark {
   color-scheme: dark;
   --theme-accent-opacity: 0.3;
-  --theme-divider: var(--color-gray-900);
-  --theme-text: var(--color-gray-200);
-  --theme-text-light: var(--color-gray-300);
-  --theme-text-lighter: var(--color-gray-600);
+  --theme-divider: hsla(var(--color-gray-10), 1);
+  --theme-text: hsla(var(--color-gray-90), 1);
+  --theme-text-light: hsla(var(--color-gray-80), 1);
+  --theme-text-lighter: hsla(var(--color-gray-40), 1);
   --theme-text-accent: var(--color-white);
-  --theme-bg: var(--color-gray-800);
-  --theme-bg-hover: var(--color-gray-600);
-  --theme-bg-offset: var(--color-gray-950);
-  --theme-code-inline-bg: var(--color-gray-600);
+  /* @@@: revisit theme-bg */
+  --theme-bg: hsla(var(--color-gray-20), 1);
+  --theme-bg-hover: hsla(var(--color-gray-40), 1);
+  --theme-bg-offset: hsla(var(--color-gray-5), 1);
+  --theme-code-inline-bg: hsla(var(--color-gray-40), 1);
   --theme-code-inline-text: var(--color-white);
-  --theme-code-bg: var(--color-gray-950);
+  --theme-code-bg: hsla(var(--color-gray-5), 1);
   --theme-code-text: var(--color-white);
 }
 
